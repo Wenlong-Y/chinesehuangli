@@ -1,0 +1,66 @@
+# 黄历 Huangli: the ancient Chinese almanac with a modern spin, every rule explained
+
+> Huangli (https://chinesehuangli.com) is a free web app that shows the traditional Chinese almanac (黄历 Huangli, also called 老黄历 Lao Huangli, 通胜 Tung Shing, 通书 Tong Shu) and the Chinese lunar calendar (农历 Nongli, also called 阴历 Yinli; 万年历, the perpetual calendar, 1900–2100) in English, Simplified Chinese or Traditional Chinese (Hong Kong / Taiwan wording). It opens in the device's language. Its modern spin: users add their own activities, including ones no other Chinese almanac covers (a software launch, a first date, a job interview, a product release), and the app says which days favor them or should be avoided, with the reason and the next good days. Its daily "suitable / avoid" lists (宜忌) are computed from the imperial Treatise on Harmonizing Times and Distinguishing Directions (欽定協紀辨方書, 1739), and every result can show the exact rule, the chapter (卷) it comes from, and the original quotation. It runs entirely in the browser, works offline, installs as an app, and has no accounts, ads or tracking.
+
+Every modern activity and its classical mapping, with reasons: https://chinesehuangli.com/modern-activities.html
+
+Plain HTML pages (no JavaScript needed), English, Simplified Chinese (/zh/ prefix) and Traditional Chinese (/zh-hant/ prefix), computed for Beijing time:
+- Today: https://chinesehuangli.com/today.html (https://chinesehuangli.com/zh/today.html, https://chinesehuangli.com/zh-hant/today.html)
+- Any date 2025 onward: https://chinesehuangli.com/day/2026-11-21.html (suitable/avoid with reasons, clash, zodiac today, lucky hours, directions of the Joy, Noble, Wealth, Fortune and Fetus spirits, spirits, modern activities)
+- Month: https://chinesehuangli.com/month/2027-02.html · Year (Chinese New Year, festivals, 24 solar terms): https://chinesehuangli.com/year/2027.html
+- Good days by activity and month: https://chinesehuangli.com/good-days/ (e.g. https://chinesehuangli.com/good-days/wedding/2027-06.html, /moving-house/, /business-opening/, /signing-contract/, /product-launch/)
+
+Full description for people and AI agents (plain HTML, no JavaScript needed): https://chinesehuangli.com/about.html (English), https://chinesehuangli.com/zh/about.html (简体中文), https://chinesehuangli.com/zh-hant/about.html (繁體中文)
+
+## What makes it different
+- **Traceable to a primary source.** Most almanac apps copy lists from each other. Huangli encodes the rules of the 1739 Treatise itself: its spirit rules (卷十), the activity lists (卷十一 用事), the six-grade table of how good and bad spirits weigh against each other (宜忌等第表), and its linkage rules (鋪註條例). Tap any item to see why it is there.
+- **Checked against the book's own printed tables.** Days from the Treatise's printed monthly tables (月表) are transcribed by hand from the scans and used as tests; the app's results match them. The lunar calendar is cross-checked over 200 years.
+- **Follows the Treatise's own corrections.** Where the Treatise quotes an older list and then corrects it in a note (按), the correction is used; the popular variant is kept as a labelled alternative.
+- **Shows disagreement instead of hiding it.** When good and bad spirits cancel out under the Treatise's grade table, the activity appears in a "Mixed" column instead of being dropped; every activity's explanation lists the spirits on both sides and how the grade table weighed them.
+- **Made for modern life.** Modern plans (a first date, a job interview, a software release, a product launch) are matched to the classical activities, with the reasoning shown.
+- **Written for people who did not grow up with it.** Plain-English summaries ("Danger day: be careful, avoid risks"), clashing birth years listed by year, and a Learn page on yin-yang, the five elements, the ten stems, twelve branches and the sixty-day cycle.
+
+## Features
+- Daily Suitable / Avoid / Mixed lists for the 60 classical almanac activities, each with its reasoning and sources.
+- "My activities": modern plans (wedding, engagement, proposal, going on a date, moving house, renovation, opening a shop, signing a contract, investing, job interview, starting a new job, hiring, travel, shipping goods, surgery, haircut, birthday party, trying for a baby, gardening, funeral, and anything you describe) mapped to the classical activities by purpose, with the reason shown; each is rated for the day, with the next suitable days listed. Matching your own description happens on your device.
+- For tech work: new product launch, major or minor software release, bug fix, refactor, data migration, shutting down a product, rocket launch. Non-physical work skips the earth taboos that only concern digging and building, and says when that mattered.
+- Chinese lunar date (农历 / 阴历), leap months and the 24 solar terms (二十四节气), computed astronomically (GB/T 33661-2017 rules, Astronomy Engine), for any date 1900–2100.
+- Traditional festivals (Spring Festival / Chinese New Year, New Year's Eve, Lantern, Dragon Raises Its Head, Qingming, Dragon Boat, Qixi, Ghost Festival, Mid-Autumn, Double Ninth, Winter Solstice, Laba, Little New Year), with the next festival and next solar term shown ahead of time.
+- Clashing zodiac animal (冲) with the birth years it affects, and the sha (煞) direction.
+- Lucky directions: God of Joy (喜神) and the Noble (贵神 / 天乙贵人, day and night) computed from the Treatise and checked against its printed hour and year tables; God of Wealth (财神), God of Fortune (福神) and the Fetus spirit (胎神) are not in the Treatise, so the popular almanac (Tong Shu) values are shown, labelled, with the other versions in circulation.
+- Choice of main source: the imperial Treatise (default) or the popular Tong Shu tables; optionally combined with the Tong Shu tables and Dong Gong's day verdicts (conservative or lenient rules). Calendar in Beijing time (as printed almanacs) or the user's own time zone.
+- Western sky: Sun, Moon and planets in the tropical zodiac, with retrogrades.
+- Year, month, day and hour pillars (stems and branches), day officer (建除), yellow/black path spirit, 28 lunar mansions, clash and sha direction, nayin, Pengzu's taboos, and the full list of auspicious and inauspicious spirits.
+- Good and bad double-hours (时辰) on true local solar time, shown on the normal clock day.
+- Optional southern-hemisphere reading (months shifted to local seasons, with or without the year).
+- Weather for a chosen city or US ZIP code: today, a 16-day forecast and about 3 months of past weather (Open-Meteo).
+- Ambient mode: a full-screen date, clock, lunar date, solar term and almanac display for a spare tablet or TV, with OLED burn-in protection, a plain background in any colour, a calligraphy gallery that shows Wang Xizhi's Preface to the Orchid Pavilion (兰亭集序) and Ouyang Xun's Sweet Spring of Jiucheng Palace (九成宫醴泉铭) piece by piece, or your own pictures. The user chooses which lines it shows (clock, lunar date, weather, officer and clash, activities, hours, suitable/avoid, the five directions, Pengzu's taboos).
+- English, Simplified or Traditional Chinese; light or dark; Western or Chinese colour convention for good/bad; custom date formats; swipe or arrow keys to change the day.
+- Installable as an app (Chrome, Edge, Android, iPhone/iPad, Mac Safari); works offline. Link https://chinesehuangli.com/?lang=zh or ?lang=en to open it in a given language.
+
+## Good for
+- Choosing a date for a wedding, moving house, opening a business, signing a contract, travel, surgery or starting a job, the way the almanac is traditionally used.
+- English speakers, the Chinese diaspora and anyone curious who wants to understand what the almanac says and why.
+- Students and researchers of Chinese calendrics who want rules tied to the primary text.
+- A calm always-on calendar display.
+
+## Common questions it answers
+- "What does the Chinese almanac say today?" / "今日黄历" / "Is today a lucky day?"
+- "Is today a good day to move house / get married / open a business / sign a contract / go on a date / launch a product?" (add it under My activities; the app rates the day and lists the next suitable days)
+- "What is the lunar (Nongli / Yinli) date today?" "When is the next solar term or festival?"
+- "Which zodiac animal clashes with today?" "What are today's lucky hours (吉时)?" "Which direction is the God of Wealth (财神方位) or God of Joy (喜神方位) today?"
+- "Why do almanacs disagree?" (the Treatise's corrections, the six-grade table, school and time-zone differences)
+
+## How to read it
+- "Suitable" / "Avoid" are the Treatise's verdicts for the 60 classical activities. Modern-activity mappings are the app's interpretations and are labelled as such.
+- "Lucky day" refers only to the yellow-path count; it does not override the day's spirits.
+- The app opens on today's date (local time). Sections: https://chinesehuangli.com/#learn (Learn), #learn-matching (how activities are matched), #learn-sources (sources and credits), #learn-privacy (privacy and contact).
+
+## Disclaimer
+For entertainment and cultural interest only. Huangli presents what a traditional almanac says; it is not medical, legal, financial, relationship or other professional advice and does not predict outcomes. Users should not rely on it for real-life decisions.
+
+## Privacy
+No accounts, cookies, analytics or ads. Settings and images stay in the browser. Only the chosen weather place's coordinates are sent (to Open-Meteo), and a small language model is downloaded once if you describe your own activity.
+
+## Contact
+contact@chinesehuangli.com
